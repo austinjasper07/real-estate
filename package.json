@@ -11,15 +11,12 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-<<<<<<< HEAD
-    "express": "^4.19.2"
-=======
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-<<<<<<< HEAD
     "react-icons": "^5.2.1",
-=======
->>>>>>> b4981eaf2e7d9c9ca37bab117a52d4ec1fb82b88
     "react-router-dom": "^6.25.1"
   },
   "devDependencies": {
@@ -34,6 +31,5 @@
     "postcss": "^8.4.40",
     "tailwindcss": "^3.4.7",
     "vite": "^5.3.4"
->>>>>>> d5ef62e94eef72b5c600a246341bc5642d04403a
   }
 }
