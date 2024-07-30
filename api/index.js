@@ -1,5 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import cors from 'cors';
 import userRouter from "./routes/UserRoute.js";
 import signUp from './routes/Sign-up.js';
 import errorHandler from './middlewares/ErrorHandler.js';
@@ -11,6 +12,12 @@ const PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// CORS configuration
+app.use(cors({
+  origin: 'http://localhost:5173', // Replace with your client's URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type'],
+}));
 
 // Route Handlers
 app.use('/user', userRouter);
