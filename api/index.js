@@ -20,18 +20,6 @@ app.use('/sign-up', signUp);
 // Error handler middleware
 app.use(errorHandler);
 
-// app.use((err, req, res, next) => {
-//   const statusCode = err.statusCode || 500;
-//   const message = err.message || "Internal Server Error"
-
-//   return res.status(statusCode).json({
-//       Success: false,
-//       statusCode,
-//       message
-//   });
-// })
-
-
 
 // MongoDB Connection
 mongoose.connect("mongodb://127.0.0.1:27017/real-estate")
